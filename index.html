@@ -17,7 +17,7 @@
 <body class="bg-dark">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">GitFinder </a>
+            <a class="navbar-brand" href="#"><i class="fa fa-github-alt"></i> GitFinder </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,63 +59,179 @@
         </nav>
 
         <h1 class="text-center">
-            < GitFinder />
+            < GitFinder /> <i class="fa fa-github-alt"></i>
         </h1>
         <div class="row mt-3">
             <div class="col-md-6 offset-md-3">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" style="border-radius:1px;" placeholder="Github username"
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-primary br-0" style="border-radius:0px" type="button"
-                        id="button-addon2">Search </button>
+                        id="getGitUserId" value="geekymayur">
+                    <button class="btn btn-primary br-0" style="border-radius:0px" type="button" id="button-1">
+                        Search <i class="fa fa-search"></i></button>
                 </div>
             </div>
         </div>
         <hr class="bg-dark">
-        <div class="row">
-            <div class="col-md-3 text-light">
-                <div id="userAvtar">
-                    <figure>
-                        <img src="/assets/1039-200x200.jpg" alt="">
-                    </figure>
+        <div class="row  p-2" id="allDataContainer">
+            <div class="col-md-3 text-light mt-4">
+                <div id="left-profile">
+
+                    <div id="userAvtar">
+                        <figure>
+                            <img src="/assets/1039-200x200.jpg" alt="" id="profileImage">
+                        </figure>
+                    </div>
+                    <h3 class="text-center mt-3" id="name1"> MAYUR SHARMA</h3>
+                    <h4 class="text-center" id="username1">geekymayur</h4>
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <table class="table text-light">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-user"></i> </th>
+                                        <td id="userinfoName">Mayur sharma</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-building"></i></th>
+                                        <td id="userinfoCompany">Google</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-location-arrow"></i></th>
+                                        <td id="userinfoLocation">Delhi</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-globe"></i></th>
+                                        <td id="userinfoBlog"><a href="" target="__blank" id="blog_link">www.mayur.co.in
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-code"></i></th>
+                                        <td id="userinfoPublicRepo">45</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
                 </div>
-                <h3 class="text-left mt-3" id="name1">MAYUR SHARMA</h3>
-                <h4 class="text-left" id="username1">geekymayur</h4>
-
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eos et voluptas similique, officiis
-                    cupiditate voluptatum omnis enim, tempora aliquid ullam laboriosam doloremque. Doloribus nisi neque
-                    odio culpa, nesciunt unde.</p>
 
             </div>
-            <div class="col-md-9">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#profile">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " data-toggle="tab" href="#Repo">Repositories <span
-                                class="badge bg-light">20</span></a>
-                    </li>
+            <div class="col-md-9 mt-4">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#profile"><i class="fa fa-user"></i>
+                                Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Repo"><i class="fa fa-code"></i>
+                                Repositories <span class="badge bg-light" id="repo_length">00</span></a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#follower">Followers <span
-                                class="badge bg-light text-dark">Light</span></a>
-                    </li>
-                </ul>
-                <div id="myTabContent" class="tab-content">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#follower"><i class="fa fa-users"></i> Followers
+                                <span class="badge bg-light text-dark" id="follower_number">00</span></a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
 
-                    <div class="tab-pane fade" id="profile">
-                        <p>Profile</p>
-                    </div>
+                        <div class="tab-pane fade" id="profile">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-dark table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="tab-pane fade" id="Repo">
-                        <p>repo</p>
-                    </div>
-                    <div class="tab-pane fade" id="follower">
-                        <p>follower</p>
+                        <div class="tab-pane fade" id="Repo">
+                            <h4 class="mt-4 text-light">All Public Repositories</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-dark table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Repositories Name</th>
+                                                <th scope="col">Owner</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="showRepoList">
+                                            <!-- <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>@twitter</td>
+                                            <td>@twitter</td>
+
+                                        </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="follower">
+                            <div class="row" id="showFollowers">
+                                <!-- <div class="col-6 col-md-4">
+                                <div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="follower-img">
+                                                <img src="/assets/1039-200x200.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="card-footer">
+                                            <h3 class="text-center">Sonu Sharma</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -130,6 +246,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ba46a6e01.js" crossorigin="anonymous"></script>
+
+    <script src="assets/scripts.js"></script>
 </body>
 
 </html>
